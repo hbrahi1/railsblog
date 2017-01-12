@@ -1,7 +1,22 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Article.create({"title"=>"eee", "text"=>"fffff"})
+Article.create({"title"=>"111", "text"=>"11111"})
+Article.create({"title"=>"TTTT", "text"=>"XXXXX"})
+Department.create({"name"=>"IT"})
+Department.create({"name"=>"HR"})
+Employee.create({"department_id"=>1, "name"=>"Ibrahim"})
+Employee.create({"department_id"=>1, "name"=>"Cosmin"})
+Employee.create({"department_id"=>1, "name"=>"Andrew"})
+Employee.create({"department_id"=>1, "name"=>"Elena"})
+Employee.create({"department_id"=>1, "name"=>"Stephane"})
+Employee.create({"department_id"=>2, "name"=>"Dominique"})
+Employee.create({"department_id"=>2, "name"=>"Tara"})
+Order.create({"delivery_address"=>"123 acme street"})
+Order.create({"delivery_address"=>"test road"})
+Product.create({"name"=>"Milk (1 liter)", "price"=>#<BigDecimal:49d7a08,'0.45E0',9(18)>})
+Product.create({"name"=>"Butter (250 gr)", "price"=>#<BigDecimal:49d5500,'0.75E0',9(18)>})
+Product.create({"name"=>"Flour (1 kg)", "price"=>#<BigDecimal:49c16a0,'0.45E0',9(18)>})
+LineItem.create({"order_id"=>1, "product_id"=>1, "quantity"=>3})
+LineItem.create({"order_id"=>1, "product_id"=>2, "quantity"=>2})
+LineItem.create({"order_id"=>2, "product_id"=>1, "quantity"=>nil})
+LineItem.create({"order_id"=>2, "product_id"=>2, "quantity"=>nil})
+LineItem.create({"order_id"=>2, "product_id"=>3, "quantity"=>nil})
