@@ -12,7 +12,6 @@ class Product < ApplicationRecord
 	validate :custom_validation
 
 	before_save :capitaliz
-	after_initialize :set_defaults
 
 	def capitaliz
 		self.name = self.name.capitalize

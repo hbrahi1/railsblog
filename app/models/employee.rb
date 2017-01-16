@@ -1,3 +1,3 @@
 class Employee < ApplicationRecord
-  belongs_to :department
+	belongs_to :department, touch: true
 end
